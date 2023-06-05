@@ -6,7 +6,7 @@ const Posts = () => {
 
   useEffect(() => {
     const getPosts = async () => {
-      const result = await axios.get("http://localhost:3000/posts", {
+      const result = await axios.get("/api/posts", {
         withCredentials: true,
       });
 
